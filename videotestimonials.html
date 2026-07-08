@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Video testimonials</title>
+        <style>
+
+            * {
+                margin:0;
+                padding: 0;
+                box-sizing: border-box;
+                background-position: fixed;
+                background-size: cover;
+                  max-width: 100%;
+                
+            }
+
+            body {
+                background-color: #f8fafc;
+                color:#1e293b;
+                
+            }
+
+           
+            .logo {
+                font-size: 30px;
+                font-weight: 500;
+                 color: #4f46e5;
+                 width:150px;
+                 height:50px;
+                 margin-left: -180px;
+                 margin-top: 20px;
+                
+                 }
+
+
+            .hero {
+                text-align: center;
+                padding: 60px 5% 40px;
+                background: linear-gradient(135deg, #4f46e5 0%, #818cf8 100%);
+                color:white;
+                margin-top: 70px;
+
+            }
+
+            .hero h1 {
+                font-size: 36px;
+                margin-bottom: 12px;
+            }
+
+            .hero p {
+                font-size: 16px;
+                opacity: 0.9;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 50px auto;
+                padding: 0 5%;
+
+            }
+
+            .video-grid {
+                display:grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+                gap: 30px;
+            }
+
+            .video-card {
+                background-color: #fff;
+                border-radius: 14px;
+                overflow: hidden;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                cursor: pointer;
+
+            }
+
+            .thumbnail {
+                position: relative;
+                width: 100%;
+                height:200px;
+                overflow: hidden;
+            }
+
+            .thumbnail img {
+                width: 350px;
+                height: 250px;
+                object-fit: cover;
+                border: #1709db 5px solid;
+            }
+
+            .play-icon {
+                position:absolute;
+                top: 50%;
+                left:50%;
+                width: 50px;
+                height:50px;
+                background-color: rgba(79, 70, 229, 0.9);
+                border-radius: 50%;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                color:white;
+                font-size: 24px;
+            }
+
+            .card-content {
+                padding: 10px;
+            }
+
+            .card-content3{
+                padding-top: 40px;
+                padding-right: 70px;
+                height: 300px;
+                width: 300px;
+            }
+            
+
+            .card-content h3 {
+                font-size: 18px;
+                margin-bottom: 8px;
+                color:#1e293b;
+
+            }
+
+            .speaker{
+                font-size: 14px;
+                color:#64748b;
+                margin-bottom: 10px;
+            }
+
+            .company {
+                font-size: 13px;
+                color:#94a3b8;
+                margin-bottom: 10px;
+            }
+
+            .rating{
+                color: #f59e0b;
+                font-size: 14px;
+            }
+
+            .date {
+                font-size: 12px;
+                color: #94a3b8;
+                margin-top: 8px;
+            }
+
+            .menu{
+                text-decoration: none;
+                width: 3000px;
+                height: 77px;
+                float: left;
+                font-size: 15px;
+                font-weight: bold;
+                background-color:burlywood;
+                padding-left: 190px;
+                margin-top: -80px;
+
+            }
+
+            ul{
+                margin-top: -40px;
+            }
+
+            
+            .a1{
+                text-decoration: none;
+                padding-left: 0px;
+            }
+
+            .a2{
+                text-decoration: none;
+                padding-left: 20px;
+            }
+
+            .a3{
+                text-decoration: none;
+                padding-left: 20px;
+            }
+
+            .a4{
+                text-decoration: none;
+                padding-left: 20px;
+            }
+
+            .a5{
+                text-decoration: none;
+                padding-left: 20px;
+            }
+
+            .a6{
+                text-decoration: none;
+                padding-left: 20px;
+            }
+
+            .a7{
+                text-decoration: none;
+                padding-left: 20px;
+            }
+
+            .a8{
+                text-decoration: none;
+                padding-left: 20px;
+            }
+
+            .a9{
+                text-decoration: none;
+                padding-left: 20px;
+            }
+
+            .a10{
+                text-decoration: none;
+                padding-left: 20px;
+            }
+
+        
+        </style>
+    </head>
+    <body>
+        <header>
+            
+            <div class="menu">
+                <div class="logo">
+              <img src="https://miweb.co.in/uploads/website-images/logo-2026-03-29-07-45-32-2095.png">
+            </div>
+            <ul>
+                <a class="a1" href="index.html">HOME</a>
+                <a class="a2" href="aboutus.html">ABOUT US</a>  
+                <a class="a3" href="successstories.html">SUCCESS STORIES</a>
+                <a class="a4" href="liveprojects.html">LIVE PROJECTS</a>
+                <a class="a5" href="videotestimonials.html">VIDEO TESTIMONIALS</a>
+                <a class="a6" href="reviews.html">REVIEWS</a>
+                <a class="a7" href="events.html">EVENTS</a>
+                <a class="a8" href="technologies.html">TECHNOLOGY</a>
+                <a class="a9" href="contact.html">CONTACT</a>
+                <a class="a10" href="login.html">LOGIN</a>
+                </ul>
+            
+            </div>
+        </header>
+        <section class="hero">
+            <h1>Video Testimonials</h1>
+            <p class="subtitle">Display clients and employee video testimonials</p>
+            </section>
+
+            <div class="container">
+                <div class="video-grid">
+                <div class="video-card">
+                    <a href="https://youtu.be/ppawFI1u6Po">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/ppawFI1u6Po/hqdefault.jpg?sqp=-oaymwFBCPYBEIoBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-DoACuAiKAgwIABABGFUgXyhlMA8=&rs=AOn4CLBl3C-SFrMBl4_wIxwZfM0A2vnPmw">
+                        <div class="play-icon"><button>&#9658; play</button></div>
+                    </div></a>
+                    <div class="card-content">
+                        <h3>Amazing service and support</h3>
+                        <p class="speaker">Speaker: Andrew Lindsey</p>
+                        <p class="company">Company: MiWebTech | Designation: Vice President</p>
+                        <div class="rating"> &#9733; 5.0</div>
+                        <p class="date">Published: 30 sept 2019</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <a href="https://youtu.be/8LSt8_11wbQ">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/8LSt8_11wbQ/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDuo45BDSzB0FHUelBwQW638S_PQg">
+                        <div class="play-icon"><button>&#9658; play</button></div>
+                    </div></a>
+                    <div class="card-content">
+                        <h3>Best WorkPlace Culture</h3>
+                        <p class="speaker">Speaker: Inga Ogilvie</p>
+                        <p class="company">Company: MiWebTech | Designation: Director</p>
+                        <div class="rating"> &#9733; 4.5</div>
+                        <p class="date">Published: 30 Jul 2019</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <a href="https://youtu.be/U-olBVF8ssQ">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/U-olBVF8ssQ/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDQikgl43lD1BKWUdJOTUFt_FgqqA">
+                        <div class="play-icon"><button>&#9658; play</button></div>
+                    </div></a>
+                    <div class="card-content">
+                        <h3>Exceeded our expectations</h3>
+                        <p class="speaker">Speaker: Uma Lorriz</p>
+                        <p class="company">Company: MiWebTech | Designation:career services advisor</p>
+                        <div class="rating"> &#9733; 5.0</div>
+                        <p class="date">Published: 30 Aug 2018</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <a href="https://youtu.be/pjCSRsdSGy8">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/pjCSRsdSGy8/hqdefault.jpg?sqp=-oaymwFBCPYBEIoBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGGUgWyhVMA8=&rs=AOn4CLD2aKhuDUHxe-RFhQ0x6uUzBPqdEg">
+                        <div class="play-icon"><button>&#9658; play</button></div>
+                    </div></a>
+                    <div class="card-content">
+                        <p class="speaker">Speaker: Vignesh Kumar</p>
+                        <p class="company">Company: MiWebTech | Designation: Senior Brand Manager</p>
+                        <div class="rating"> &#9733; 4.5</div>
+                        <p class="date">Published: 2 Jun 2025</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <a href="https://youtu.be/RgNzIBuxPEA">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/RgNzIBuxPEA/hqdefault.jpg?sqp=-oaymwFBCPYBEIoBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGEUgZShKMA8=&rs=AOn4CLAhZZUeOJc_wJ_lbcLKyAGfIf62KQ">
+                        <div class="play-icon"><button>&#9658;play</button></div>
+                    </div></a>
+                    <div class="card-content">
+                        <p class="speaker">Speaker: Michael Page</p>
+                        <p class="company">Company: MiWebTech | Designation: Senior Design Engineer</p>
+                        <div class="rating"> &#9733; 5.0</div>
+                        <p class="date"> Published: 10 Feb 2023</p>
+
+                    </div>
+                </div>
+
+                        <div class="video-card">
+                    <a href="https://youtu.be/Jw7s42Op2ao">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/Jw7s42Op2ao/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAEJSYPyyh21FpcvxYUHl9oepHQnw">
+                        <div class="play-icon"><button>&#9658;play</button></div>
+                    </div></a>
+                    <div class="card-content">
+                        <p class="speaker">Speaker: Joshua Buckham </p>
+                        <p class="company">Company: MiWebTech | Designation:Marketing Manager </p>
+                        <div class="rating"> &#9733; 4.5</div>
+                        <p class="date"> Published: 31 may 2023</p>
+                    </div>
+                        </div>
+
+                        <div class="video-card">
+                    <a href="https://youtu.be/JihfflYaZWY">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/JihfflYaZWY/hqdefault.jpg?sqp=-oaymwFBCPYBEIoBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGD4gZShVMA8=&rs=AOn4CLBoWs_ojxejoDzeTG9eaX_-iuj8hQ">
+                        <div class="play-icon"><button>&#9658;play</button></div>
+                    </div></a>
+                    <div class="card-content">
+                        <p class="speaker">Speaker: Shivani Jain </p>
+                        
+                        <div class="rating"> &#9733; 5.0</div>
+                        <p class="date"> Published: 8 Jul 2025 </p>
+                    </div>
+                        </div>
+
+                        
+                        <div class="video-card">
+                    <a href="https://youtu.be/0F9NViANva8">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/0F9NViANva8/hqdefault.jpg?sqp=-oaymwFBCPYBEIoBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGEIgZSgUMA8=&rs=AOn4CLA6C_Gfgr92OWh-UgXkYx7EDLpLXw">
+                        <div class="play-icon"><button>&#9658;play</button></div>
+                    </div></a>
+                    <div class="card-content">
+                        <p class="speaker">Speaker: Arnaaz</p>
+                        
+                        <div class="rating"> &#9733; 4.5</div>
+                        <p class="date"> Published: 28 Jan 2022 </p>
+                    </div>
+                        </div>
+                    </div>
+                        </div>
+                    
+             
+                </body>
+                </html>
+                
