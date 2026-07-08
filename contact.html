@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Contact page</title>
+    </head>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+        }
+
+         .main{
+            width: 100%;
+            background: linear-gradient( to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(https://cdn.wallpapersafari.com/25/78/oGBjDJ.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 109vh;
+        }
+
+       .navbar{
+        width: 1200px;
+        height: 75px;
+        margin: auto;
+       }
+
+       .icon{
+        width: 230px;
+        float: left ;
+        height: 70px;
+       }
+
+       .logo{
+        color: #ff7230;
+        font-size: 35px;
+        font-family:'Franklin Gothic Medium';
+        padding-left: 00px;
+        float: left;
+        padding-top: 10px;
+        
+       }
+
+          .img1{
+        width: 180px;
+        height: 70px;
+        background-color: white;
+        border: 2px solid white;
+       }
+
+
+       .logo, .icon{
+        padding-right: 40px;
+       }
+
+       .menu{
+        width: 300px;
+        height: 77px;
+        float: left;
+        
+       }
+        
+       ul{
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin-left: 20px;
+        margin-top: 29px;
+        font-size: 16px;
+        color: white;
+       }
+
+       ul  a{
+        text-decoration: none;
+        color: #ff7230;
+        font-family: Arial;
+        font-weight: bold;
+        transition: 0.3s ease-in-out;
+       }
+
+       
+
+       ul a:hover{
+        color: #ff7230;
+        text-decoration:dashed;
+         border: 2px solid white;
+       }
+       
+     
+
+       .content{
+        padding-left: 0px;
+        padding-top: 170px;
+        color: #fcfafc;
+        font-size: 13px;
+        text-align: 10px right;
+        margin-left: 80px;
+    
+       }
+
+       .contact-box1{
+        font-family: 'Courier New', Courier, monospace;
+        max-width: 233px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0.4px 10px rgba(240, 218, 26, 0.4);
+        background-color: #fdae1b;
+        border: 3px double;
+        height: 10px;
+       }
+       .callbox1{
+           display: flex;
+           align-items: center;
+           margin-bottom: 10px;
+           color: black;
+           padding-left: 2px;
+            padding-left: 20px;
+       }
+
+          .contact-box2{
+        font-family: 'Courier New', Courier, monospace;
+        max-width: 233px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow:0.4px 10px rgba(240, 218, 26, 0.4);
+        background-color: #fdae1b;
+        border: 3px double;
+        height: 10px;
+       }
+
+       .callbox2{
+           display: flex;
+           align-items: center;
+           margin-bottom: 10px;
+           color: black;
+            padding-left: 20px;
+       }
+
+          .contact-box3{
+        font-family: 'Courier New', Courier, monospace;
+        max-width: 230px;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0.4px 10px rgba(240, 218, 26, 0.4);
+        background-color: #fdae1b;
+        border: 3px double;
+        height: 30px;
+        margin-top: 3px;
+       }
+
+       .callbox3{
+           display: flex;
+           align-items: center;
+           margin-bottom: 10px;
+           color: black;
+           font-size: 15px;
+           padding-left: 20px;
+        }
+
+         .contact-box4{
+        font-family: 'Courier New', Courier, monospace;
+        max-width: 230px;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0.4px 10px rgba(240, 218, 26, 0.4);
+        background-color: #fdae1b;
+        border: 3px double;
+        height: 30px;
+        margin-top: 10px;
+       }
+
+       .callbox4{
+           display: flex;
+           align-items: center;
+           margin-bottom: 10px;
+           color: black;
+           font-size: 15px;
+           padding-left: 20px;
+        }
+
+         .contact-box5{
+        font-family: 'Courier New', Courier, monospace;
+        max-width: 230px;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0.4px 10px rgba(240, 218, 26, 0.4);
+        background-color: #fdae1b;
+        border: 3px double;
+        height: 40px;
+        margin-top: 10px;
+       }
+
+       .callbox5{
+           display: flex;
+           align-items: center;
+           margin-bottom: 10px;
+           color: black;
+           font-size: 5px;
+           padding-left: 20px;
+        }
+
+        .b1{
+            font-size: 13px;
+            padding-left: 12px;
+        }
+
+        .h22{
+            margin-top: -20px;
+        }
+
+        h2{
+            padding-left: 60px;
+            text-decoration-line: underline;
+        }
+
+        h3{
+            padding-left: 80px;
+             text-decoration-line: underline;
+        }
+
+        i{
+            font-size:15px;
+            font-family: Arial;
+        }
+
+        .cont-form{
+          
+            width: 350px;
+            height: 450px;
+            background: linear-gradient(to top, rgba(0, 0, 117, 0.3)50%,rgba(0,0,117,0.3)50%);
+            position: absolute;
+            top: 150px;
+            right:300px;
+            border: 5px double #faa404;
+            backdrop-filter: blur(10px);
+             border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        }
+
+        .h21{   
+            color: #fdae1b;
+            padding-top: 5px;
+            padding-left: 100px;
+
+        }
+
+        .label1{
+            display: block;
+            color: orange;
+            margin-top: 20px;
+            padding-left: 10px;
+        }
+
+       .label2{
+            display: block;
+            color: orange;
+            margin-top: 20px;
+            padding-left: 10px;
+        }
+
+        .label3{
+            display: block;
+            color: orange;
+            margin-top: 20px;
+            padding-left: 10px;
+        }
+
+         .label4
+         {
+            display: block;
+            color: orange;
+            margin-top: 20px;
+            padding-left: 10px;
+        }
+
+
+        .input1{
+            color: #fff ;
+            border: 2px solid orange;
+             backdrop-filter:blur(10px);
+            font-weight: 600;
+            height: 20px;
+            width: 90%;
+            margin-left: 10px;
+            margin-top: 10px;
+             background: linear-gradient(to top, rgba(0, 0, 117, 0.3)50%,rgba(0,0,117,0.3)50%);
+        }
+
+        .input2{
+            color: #fff;
+            border: 2px solid orange;
+             backdrop-filter:blur(10px);
+            font-weight: 600;
+            height: 20px;
+            margin-top: 10px;
+            margin-left: 10px;
+            width: 90%;
+             background: linear-gradient(to top, rgba(0, 0, 117, 0.3)50%,rgba(0,0,117,0.3)50%);
+        }
+
+        .input3{
+            backdrop-filter:blur(10px);
+            margin-top: 10px;
+            border: 2px solid orange;
+            color: #fff;
+            font-weight: 600;
+            margin-left: 10px;
+            width: 90%;
+            height: 50px;
+             background: linear-gradient(to top, rgba(0, 0, 117, 0.3)50%,rgba(0,0,117,0.3)50%);
+        }
+
+        .input4{
+            backdrop-filter:blur(10px);
+            margin-top: 10px;
+            border: 2px solid orange;
+            color: #fff;
+            font-weight: 600;
+            margin-left: 10px;
+            width: 90%;
+            height: 50px;
+             background: linear-gradient(to top, rgba(0, 0, 117, 0.3)50%,rgba(0,0,117,0.3)50%);
+        }
+
+        .btn2{
+            font-size: 15px;
+            font-weight: 600;
+            color:#070000;
+            background-color:#ff7230;
+            padding: 9px;
+            width: 80%;
+            padding-left: 15px;
+            margin-left: 25px;
+            margin-top: 25px;
+        }
+
+        .a1{
+            padding-left: 10px;
+            border: 2px solid #ff7230;
+            padding: 3px;
+        }
+        
+        .a2{
+            padding-left: 12px;
+                        padding: 3px;
+            margin-left: 7px;
+             border: 2px solid #ff7230;
+        }
+
+        .a3{
+             padding-left: 12px;
+                         padding: 3px;
+            margin-left: 7px;
+             border: 2px solid #ff7230;
+        }
+
+        .a4{
+            padding-left: 12px;
+                        padding: 3px;
+            margin-left: 7px;
+             border: 2px solid #ff7230;
+        }
+
+         .a5{
+             padding-left: 12px;
+                         padding: 3px;
+            margin-left: 7px;
+             border: 2px solid #ff7230;
+        }
+
+         .a6{
+             padding-left: 16px;
+                         padding: 3px;
+            margin-left: 7px;
+             border: 2px solid #ff7230; 
+        }
+
+         .a7{
+             padding-left: 18px;
+                         padding: 3px;
+            margin-left: 7px;
+             border: 2px solid #ff7230;
+        }
+
+         .a8{
+             padding-left: 18px;
+                         padding: 3px;
+            margin-left: 7px;
+             border: 2px solid #ff7230;
+        }
+
+         .a9{
+             padding-left: 18px;
+                         padding: 3px;
+            margin-left: 7px;
+             border: 2px solid #ff7230;
+        }
+
+         .a10{
+             padding-left: 18px;
+                         padding: 3px;
+            margin-left: 7px;
+             border: 2px solid #ff7230;
+        }
+    </style>
+    <body>
+       <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"><img class="img1" src="https://miweb.co.in/uploads/website-images/logo-2026-03-29-07-45-32-2095.png"></h2>
+            </div>
+        
+            <div class="menu">
+                <ul>
+                    <a class="a1" href="index.html">Home</a>
+                    <a class="a2" href="aboutus.html">AboutUs</a>
+                    <a class="a3" href="successstories.html">SuccessStories</a>
+                    <a class="a4" href="liveprojects.html">LiveProjects</a>
+                    <a class="a5" href="videotestimonials.html">VideoTestimonials</a>
+                    <a class="a6" href="reviews.html">Reviews</a>
+                    <a class="a7" href="events.html">Events</a>
+                    <a class="a8" href="technologies.html">Technology</a>
+                    <a class="a9" href="contact.html">ContactUs </a>
+                    <a class="a10" href="login.html">Login</a>
+                </ul>
+                
+            </div>
+            
+           
+                 <div class="content">
+            <h2 class="h22">How can we help you?</h2><br>
+             <h3>Connect With Us :</h3><br>
+             <div class="contact-box1">
+              <div class="callbox1">
+                <i class="call">Call us:- </i>
+                <a href="#">+1 234 567-890</a>
+              </div> 
+              </div><br> 
+
+               <div class="contact-box2">
+              <div class="callbox2">
+                <i class="Email">Mail us:- </i>
+                <a href="#">abc@gmail.com</a>
+              </div> 
+               </div><br>
+
+                <div class="contact-box3">
+              <div class="callbox3">
+                <i class="Address">Address:- </i>
+                <a href="#">21,Pune ,Maharashtra, India-400000</a>
+              </div>  
+               </div>
+
+               <div class="contact-box4">
+                <div class="callbox4">
+                    <i class="Operating Hours">Operating Hours:-</i>
+                    <b class="b1">9:30 AM to 6:30 PM</b><br>
+                </div>
+               </div>
+
+               
+               <div class="contact-box5">
+                <div class="callbox5">
+                    <i class="Response Time">Response Time:-</i>
+                    <b class="b1">We aim to respond to all inquiries within<br>
+                    1 bussiness day.</b>
+                </div>
+               </div>
+            
+        </div>
+        </div>
+            </div>
+            <form>
+            <div class="cont-form">
+                <h2 class="h21">Contact Info</h2>
+                <label class="label1" for="name">Name*</label>
+                <input class="input1" type="text"  name="name" placeholder="Enter your name" required><br>
+                <label class="label2" for="name">Email*</label>
+               <input class="input2" type="email" name="email" placeholder="Enter email here" required><br>
+                <label class="label3" for="number">Contact No.*</label>
+                <input class="input3" type="number"  name="number" placeholder="Enter your number" required><br>
+               <label class="label4" for="message">Message*</label>
+            <input class="input4" type="message" name="message" placeholder="Enter your message" required><br>
+            <button class="btn2" onclick="checkfields()">Submit</button>
+             
+            </div>
+            </form>
+            <script>
+                function checkfields(){
+                    if (name === " " &&  email === " "  && number === " "){
+                            alert("Contact Info Submitted Successfully");
+                        }
+                        else{
+                            alert("Please fill out the all fields before submitting.");
+                        }
+                    
+                }
+            </script>
+
+        </div>
+       
+       </div>
+       
+       
+   
+</body>
+</html>
