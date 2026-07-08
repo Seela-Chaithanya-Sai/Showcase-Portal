@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroInfoWeb | Technologies</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+    <a href="index.html">
+        <img src="https://miweb.co.in/uploads/website-images/logo-2026-03-29-07-45-32-2095.png" alt="MicroInfoWeb Logo">
+    </a>
+</div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="successstories.html">Success Stories</a></li>
+            <li><a href="liveprojects.html">Live Projects</a></li>
+            <li><a href="videotestimonials.html">Video Testimonials</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a class="active" href="technologies.html">Technologies</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html" class="login-btn">Admin Login</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Technologies We Work With</h1>
+
+        <p>
+            We build innovative, scalable and secure digital solutions
+            using cutting-edge technologies across Web, Mobile, Cloud,
+            Database and Enterprise platforms.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FRONTEND ================= -->
+
+<section class="category">
+
+    <h2>Frontend Technologies</h2>
+
+    <div class="tech-grid">
+
+        <div class="card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+
+            <h3>HTML5</h3>
+
+            <p>Create responsive and semantic web pages.</p>
+
+            <button onclick="toggleInfo('html')">Learn More</button>
+
+            <div id="html" class="info">
+                HTML5 provides semantic tags, multimedia support,
+                forms, canvas, SVG, SEO-friendly structure and better accessibility.
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+
+            <h3>CSS3</h3>
+
+            <p>Beautiful modern UI and responsive layouts.</p>
+
+            <button onclick="toggleInfo('css')">Learn More</button>
+
+            <div id="css" class="info">
+                CSS3 supports Flexbox, Grid, animations,
+                transitions, media queries and responsive design.
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+
+            <h3>JavaScript</h3>
+
+            <p>Add interactivity and dynamic behaviour.</p>
+
+            <button onclick="toggleInfo('js')">Learn More</button>
+
+            <div id="js" class="info">
+                JavaScript powers dynamic web applications,
+                APIs, DOM manipulation and modern frameworks.
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+
+            <h3>React</h3>
+
+            <p>Component-based modern web applications.</p>
+
+            <button onclick="toggleInfo('react')">Learn More</button>
+
+            <div id="react" class="info">
+                React enables reusable components,
+                virtual DOM, hooks and fast UI development.
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg">
+
+            <h3>Angular</h3>
+
+            <p>Enterprise-level front-end framework.</p>
+
+            <button onclick="toggleInfo('angular')">Learn More</button>
+
+            <div id="angular" class="info">
+                Angular offers TypeScript support,
+                routing, dependency injection and scalable architecture.
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg">
+
+            <h3>Vue</h3>
+
+            <p>Lightweight progressive JavaScript framework.</p>
+
+            <button onclick="toggleInfo('vue')">Learn More</button>
+
+            <div id="vue" class="info">
+                Vue provides two-way data binding,
+                reusable components and excellent performance.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= BACKEND ================= -->
+
+<section class="category">
+
+<h2>Backend Technologies</h2>
+
+<div class="tech-grid">
+
+<div class="card">
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+
+<h3>Java</h3>
+
+<p>Robust enterprise application development.</p>
+
+<button onclick="toggleInfo('java')">Learn More</button>
+
+<div id="java" class="info">
+Java is highly secure, platform-independent and widely used
+for enterprise software development.
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg">
+
+<h3>Spring Boot</h3>
+
+<p>Build scalable Java backend applications.</p>
+
+<button onclick="toggleInfo('spring')">Learn More</button>
+
+<div id="spring" class="info">
+Spring Boot simplifies REST APIs,
+microservices and enterprise backend development.
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+
+<h3>Python</h3>
+
+<p>Fast and powerful programming language.</p>
+
+<button onclick="toggleInfo('python')">Learn More</button>
+
+<div id="python" class="info">
+Python is used in automation,
+AI, machine learning, web development and scripting.
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg">
+
+<h3>Django</h3>
+
+<p>Secure Python web framework.</p>
+
+<button onclick="toggleInfo('django')">Learn More</button>
+
+<div id="django" class="info">
+Django includes authentication,
+ORM, admin panel and rapid application development.
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+
+<h3>Node.js</h3>
+
+<p>High-performance JavaScript runtime.</p>
+
+<button onclick="toggleInfo('node')">Learn More</button>
+
+<div id="node" class="info">
+Node.js enables real-time applications,
+REST APIs and scalable backend systems.
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdcDhjiopcDxp08fvrIkFw48-WR9VXPzW6fyTstigNdw&s=10">
+
+<h3>Laravel</h3>
+
+<p>Elegant PHP web framework.</p>
+
+<button onclick="toggleInfo('laravel')">Learn More</button>
+
+<div id="laravel" class="info">
+Laravel provides MVC architecture,
+authentication, routing and Eloquent ORM.
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= DATABASE ================= -->
+
+<section class="category">
+
+<h2>Database Technologies</h2>
+
+<div class="tech-grid">
+
+<div class="card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+<h3>MySQL</h3>
+<p>Reliable relational database.</p>
+<button onclick="toggleInfo('mysql')">Learn More</button>
+<div id="mysql" class="info">
+MySQL is widely used for secure, scalable and high-performance applications.
+</div>
+</div>
+
+<div class="card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg">
+<h3>PostgreSQL</h3>
+<p>Advanced open-source database.</p>
+<button onclick="toggleInfo('postgres')">Learn More</button>
+<div id="postgres" class="info">
+PostgreSQL offers advanced indexing,
+security and ACID compliance.
+</div>
+</div>
+
+<div class="card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">
+<h3>MongoDB</h3>
+<p>NoSQL document database.</p>
+<button onclick="toggleInfo('mongo')">Learn More</button>
+<div id="mongo" class="info">
+MongoDB stores flexible JSON documents and scales horizontally.
+</div>
+</div>
+
+<div class="card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg">
+<h3>SQL Server</h3>
+<p>Enterprise Microsoft database.</p>
+<button onclick="toggleInfo('sqlserver')">Learn More</button>
+<div id="sqlserver" class="info">
+SQL Server offers enterprise security,
+analytics and reporting services.
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CLOUD ================= -->
+
+<section class="category">
+
+<h2>Cloud Platforms</h2>
+
+<div class="tech-grid">
+
+<div class="card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg">
+<h3>AWS</h3>
+<p>World's leading cloud platform.</p>
+<button onclick="toggleInfo('aws')">Learn More</button>
+<div id="aws" class="info">
+AWS offers EC2, S3, Lambda,
+RDS, CloudFront and hundreds of cloud services.
+</div>
+</div>
+
+<div class="card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg">
+<h3>Microsoft Azure</h3>
+<p>Enterprise cloud solutions.</p>
+<button onclick="toggleInfo('azure')">Learn More</button>
+<div id="azure" class="info">
+Azure supports AI,
+virtual machines, DevOps and hybrid cloud.
+</div>
+</div>
+
+<div class="card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg">
+<h3>Google Cloud</h3>
+<p>Scalable cloud infrastructure.</p>
+<button onclick="toggleInfo('gcp')">Learn More</button>
+<div id="gcp" class="info">
+Google Cloud excels in Kubernetes,
+BigQuery, AI and cloud-native applications.
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= MOBILE ================= -->
+
+<section class="category">
+
+<h2>Mobile Development</h2>
+
+<div class="tech-grid">
+
+<div class="card">
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg">
+
+<h3>Flutter</h3>
+
+<p>Cross-platform mobile framework.</p>
+
+<button onclick="toggleInfo('flutter')">Learn More</button>
+
+<div id="flutter" class="info">
+Flutter uses a single codebase
+to develop Android, iOS, Web and Desktop apps.
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+
+<h3>React Native</h3>
+
+<p>Native mobile apps using React.</p>
+
+<button onclick="toggleInfo('rn')">Learn More</button>
+
+<div id="rn" class="info">
+React Native builds fast
+Android and iOS applications with reusable components.
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>© 2025 MicroInfoWeb | Technologies Showcase</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
