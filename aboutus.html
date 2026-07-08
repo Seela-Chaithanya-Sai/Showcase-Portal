@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Micro Info Web</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f9ff;
+    color:#333;
+} 
+  /* Navigation Bar  */
+nav{
+            background:#74add6;
+            display:inline-flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 95px;
+            border-bottom: #EAF6FF;
+            border-bottom-style: solid;
+        }
+            
+        .logo{
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    height:50px;   /* Change this value if needed */
+    width:auto;
+    display:block;
+}
+        
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:30px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-size:16px;
+        }
+
+        nav ul li a:hover{
+            color:#FFD700;
+        }    
+/* Hero Section */
+.hero{
+    background:linear-gradient(135deg,#0f4c81,#1e88e5);
+    color:white;
+    text-align:center;
+    padding:20px 8px;
+}
+
+.hero h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* About Section */
+.about{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.about-content{
+    flex:1;
+}
+
+.about-content h2{
+    color:#0f4c81;
+    margin-bottom:20px;
+    font-size:34px;
+}
+
+.about-content p{
+    line-height:1.8;
+    margin-bottom:18px;
+    text-align:justify;
+}
+
+/* Mission Vision */
+
+.mv-section{
+    background:white;
+    padding:60px 10%;
+}
+
+.mv-container{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:280px;
+    background:#f3f8ff;
+    padding:30px;
+    border-radius:10px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.card h3{
+    color:#0f4c81;
+    margin-bottom:15px;
+}
+
+/* Why Choose */
+
+.why{
+    padding:60px 10%;
+}
+
+.why h2{
+    text-align:center;
+    color:#0f4c81;
+    margin-bottom:40px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.feature:hover{
+    transform:translateY(-8px);
+}
+
+.feature h4{
+    color:#1565c0;
+    margin-bottom:12px;
+}
+
+/* Stats */
+
+.stats{
+    background:#0f4c81;
+    color:white;
+    padding:60px 20px;
+}
+
+.stats-container{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    flex-wrap:wrap;
+}
+
+.stat{
+    text-align:center;
+}
+
+.stat h2{
+    font-size:42px;
+}
+
+.stat p{
+    margin-top:10px;
+}
+
+/* Footer */
+
+footer{
+    background:#081c34;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:35px;
+}
+
+.about{
+flex-direction:column;
+}
+
+.stats-container{
+gap:40px;
+}
+
+}
+</style>
+
+</head>
+
+<body> 
+<nav>
+      <div class="logo">
+    <a href="index.html">
+        <img src="https://miweb.co.in/uploads/website-images/logo-2026-03-29-07-45-32-2095.png" alt="">
+    </a>
+</div>  
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="successstories.html">SuccessStories</a></li>
+        <li><a href="liveprojects.html">LiveProjects</a></li>
+        <li><a href="videotestimonials.html">VideosTestimonials</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="technologies.html"> Technologies</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav> <hr 100%>
+     
+<header class="hero">
+<h1>About Micro Info Web</h1>
+
+<p>
+Empowering businesses through innovative software solutions, digital transformation,
+and technology-driven services that deliver measurable results.
+</p>
+
+</header>
+
+<section class="about">
+
+<div class="about-image">
+
+<img src="photo2.jpg" alt="Software Company">
+
+</div>
+
+<div class="about-content">
+
+<h2>Who We Are</h2>
+
+<p>
+Micro Info Web is a leading IT solutions company dedicated to delivering
+high-quality web development, software development, UI/UX design,
+digital marketing, cloud solutions, and technology consulting services.
+</p>
+
+<p>
+Our experienced professionals combine creativity, innovation,
+and technical expertise to build scalable digital solutions that
+help organizations streamline operations and achieve business growth.
+</p>
+
+<p>
+We believe in building long-term partnerships through quality,
+transparency, reliability, and customer satisfaction.
+</p>
+
+</div>
+
+</section>
+
+<section class="mv-section">
+
+<div class="mv-container">
+
+<div class="card">
+
+<h3>🎯 Our Mission</h3>
+
+<p>
+To provide innovative, reliable, and cost-effective technology
+solutions that empower businesses to grow faster and stay ahead
+in the digital world.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🚀 Our Vision</h3>
+
+<p>
+To become a globally trusted technology partner by delivering
+exceptional digital solutions with innovation, quality, and excellence.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="why">
+
+<h2>Why Choose Micro Info Web?</h2>
+
+<div class="features">
+
+<div class="feature">
+<h4>Experienced Team</h4>
+<p>Highly skilled professionals delivering innovative IT solutions.</p>
+</div>
+
+<div class="feature">
+<h4>Quality Assurance</h4>
+<p>Every project follows industry standards and quality processes.</p>
+</div>
+
+<div class="feature">
+<h4>Customer Focus</h4>
+<p>We build long-term relationships by understanding business needs.</p>
+</div>
+
+<div class="feature">
+<h4>Modern Technologies</h4>
+<p>We leverage the latest technologies to deliver scalable solutions.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stats-container">
+
+<div class="stat">
+<h2>100+</h2>
+<p>Projects Delivered</p>
+</div>
+
+<div class="stat">
+<h2>50+</h2>
+<p>Happy Clients</p>
+</div>
+
+<div class="stat">
+<h2>20+</h2>
+<p>Technology Experts</p>
+</div>
+
+<div class="stat">
+<h2>5+</h2>
+<p>Years Experience</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Micro Info Web. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
