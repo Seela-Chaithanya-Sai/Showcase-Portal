@@ -1,0 +1,603 @@
+<html>
+    <head>
+       <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>MICRO INFO WEB</title>
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <link rel="icon" type="image/png" href="https://miweb.co.in/uploads/website-images/favicon-2026-03-24-09-36-10-2274.png">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+            .container {
+                max-width: 1200px;
+                margin: auto;
+                width: 90%;
+            }
+            header{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+                background:rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(10px);
+            }
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0;
+            }
+            .logo a{
+                align-items: center;
+            }
+             .logo img{
+                filter: brightness(220%);
+                height:40px;   
+                width:auto;
+                display:block;
+            }
+            .nav-links{
+                display: flex;
+                list-style: none;
+            }
+            .nav-links li{
+                margin-left: 25px;
+            }
+            .nav-links a{
+                text-decoration: none;
+                color: #fff;
+                font-size: 14px;
+                transition: color 0.3s ease;
+            }
+            .nav-links a:hover{
+                color: #ff6347;
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .btn1{
+                display: inline-block;
+                background: #ff6347;
+                color: #fff;
+                padding: 8px 8px;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: 0.3s;
+                font-weight: bold;
+            }
+            .btn1:hover{
+                background: #e5533d;
+                transform: translateY(-3px);
+            }
+
+            .hero{
+                height: 100vh;
+                background: url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200") center/cover no-repeat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color:#fff
+            }
+            .hero h1{
+                font-size: 60px;
+                text-align: center;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+
+                margin-bottom: 20px;
+            }
+            .hero p{
+                font-size: 24px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .btn{
+                display: inline-block;
+                background: #ff6347;
+                color: #fff;
+                padding: 14px 34px;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: 0.3s;
+                font-weight: bold;
+            }
+            .btn:hover{
+                background: #e5533d;
+                transform: translateY(-3px);
+            }
+
+            section{
+                padding: 80px 0;
+            }
+            .section-title{
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            .section-title h2{
+                font-size: 44px;
+                margin-bottom: 10px;
+            }
+            .section-title p{
+                font-size: 26px;
+                color: #000000;
+            }
+
+            .about{
+                background:#fff;
+            }
+
+            .about-grid{
+                display:grid;
+                grid-template-columns:1fr 1fr;
+                gap:50px;
+                align-items:center;
+            }
+
+            .about img{
+                width:100%;
+                border-radius:10px;
+            }
+
+            .about h3{
+                margin-bottom:20px;
+                font-size:34px;
+            }
+
+            .about p{
+                font-size:20px;
+                margin-bottom:25px;
+                line-height:1.5;
+            }
+            .stats{
+                background:#0f172a;
+                color:white;
+            }
+
+            .stats-grid{
+                display:grid;
+                grid-template-columns:repeat(4,1fr);
+                gap:30px;
+                text-align:center;
+            }
+
+            .stat i{
+                font-size:40px;
+                color:#ff6b00;
+                margin-bottom:15px;
+            }
+
+            .stat h3{
+                font-size:42px;
+                margin-bottom:10px;
+            }
+
+            .stat{
+                transition:.3s;
+            }
+
+            .stat:hover{
+                transform:translateY(-8px);
+            }
+
+
+            .projects-grid{
+                display:grid;
+                grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+                gap:40px;
+                line-height:1.5;
+            }
+
+            .project{
+                border-radius:10px;
+                overflow:hidden;
+                box-shadow:0 10px 30px rgba(0,0,0,.1);
+                transition:.4s;
+                background:white;
+            }
+
+            .project img{
+                width:100%;
+                height:250px;
+                transition:.4s;
+            }
+
+            .project:hover{
+                transform:translateY(-10px);
+            }
+
+            .project:hover img{
+                transform:scale(1.05);
+            }
+
+            .project-content{
+                padding:25px;
+
+            }
+            .project-content h3{
+                margin-bottom:20px;
+                font-size:24px;
+            }
+
+
+
+            .cta{
+                background:#ff6a00d8;
+                color:white;
+                text-align:center;
+            }
+
+            .cta h2{
+                font-size:42px;
+            }
+
+            .cta p{
+                margin:20px 0 50px;
+                font-size:20px;
+            }
+
+            .cta .btn{
+                background:white;
+                color:#ff6b00;
+            }
+
+
+
+            .testimonials{
+                background:#f8f9fb;
+            }
+
+            .testimonials-grid{
+                display:grid;
+                grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+                gap:30px;
+            }
+
+            .testimonial{
+                background:white;
+                padding:35px;
+                border-left:5px solid #ff6b00;
+                border-radius:8px;
+                transition:.3s;
+                box-shadow:0 5px 15px rgba(0,0,0,.08);
+            }
+
+            .testimonial:hover{
+                transform:translateY(-8px);
+            }
+
+            .testimonial i{
+                color:#ff6b00;
+                font-size:30px;
+                margin-bottom:20px;
+            }
+
+            .testimonial h4{
+                margin-top:20px;
+                color:#ff6b00;
+            }
+            .testimonial p{
+                font-size:18px;
+                line-height:1.5;
+            }
+
+
+
+            footer{
+                background:#111827;
+                color:white;
+                text-align:center;
+                padding:50px 20px;
+            }
+
+            footer h2{
+                margin-bottom:15px;
+            }
+
+            .social{
+                margin:25px 0;
+            }
+
+            .social a{
+                color:white;
+                font-size:22px;
+                margin:0 10px;
+                transition:.3s;
+            }
+
+            .social a:hover{
+                color:#ff6b00;
+            }
+
+
+
+            @media(max-width:768px){
+
+                .navbar{
+                    flex-direction:column;
+                }
+
+                .nav-links{
+                    margin-top:20px;
+                    flex-wrap:wrap;
+                    justify-content:center;
+                }
+
+                .nav-links li{
+                    margin:10px;
+                }
+
+                .hero h1{
+                    font-size:38px;
+                }
+
+                .hero p{
+                    font-size:17px;
+                }
+
+                .about-grid{
+                    grid-template-columns:1fr;
+                }
+
+                .stats-grid{
+                    grid-template-columns:repeat(2,1fr);
+                }
+
+            }
+
+            @media(max-width:500px){
+
+                .stats-grid{
+                    grid-template-columns:1fr;
+                }
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="container navbar">
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://miweb.co.in/uploads/website-images/logo-2026-03-29-07-45-32-2095.png" alt="Logo">
+                    </a>
+                </div>
+                    <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="successstories.html">Success Stories</a></li>
+                    <li><a href="liveprojects.html">Live Projects</a></li>
+                    <li><a href="videotestimonials.html">Video Testimonials</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="technologies.html">Technologies</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html" class="btn1">Admin Login</a></li>
+                    
+                    </ul>
+
+                </div>
+            </div>
+
+        </header>
+
+        <section class="hero">
+
+            <div class="container">
+
+                <h1>Building Better Solutions For Tomorrow</h1>
+
+                <p>Delivering innovative projects with quality, trust and excellence.</p>
+
+                <a href="contact.html" class="btn">Get Started</a>
+
+            </div>
+
+        </section>
+
+        <section class="about" id="about">
+
+            <div class="container">
+
+            <div class="section-title">
+            <h2>Who We Are</h2>
+            <p>Dedicated to delivering exceptional results.</p>
+            </div>
+
+            <div class="about-grid">
+
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="handshake">
+
+            <div>
+
+            <h3>Your Trusted Business Partner</h3>
+
+            <p>We specialize in delivering world-class business solutions that empower organizations to grow through innovation, technology, and customer-focused strategies. Our experienced professionals work closely with clients to transform ideas into successful outcomes.</p>
+
+            <a href="aboutus.html" class="btn">Learn More</a>
+
+            </div>
+
+            </div>
+
+            </div>
+
+        </section>
+
+        <section class="stats">
+
+            <div class="container">
+
+            <div class="stats-grid">
+
+            <div class="stat">
+            <i class="fas fa-briefcase"></i>
+            <h3>250+</h3>
+            <p>Projects</p>
+            </div>
+
+            <div class="stat">
+            <i class="fas fa-users"></i>
+            <h3>150+</h3>
+            <p>Clients</p>
+            </div>
+
+            <div class="stat">
+            <i class="fas fa-award"></i>
+            <h3>12+</h3>
+            <p>Years</p>
+            </div>
+
+            <div class="stat">
+            <i class="fas fa-user-tie"></i>
+            <h3>50+</h3>
+            <p>Experts</p>
+            </div>
+
+            </div>
+
+            </div>
+
+        </section>
+
+        <section id="projects">
+
+            <div class="container">
+
+            <div class="section-title">
+            <h2>Featured Projects</h2>
+            <p>Our latest successful work.</p>
+            </div>
+
+            <div class="projects-grid">
+
+            <div class="project">
+            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159" alt="project1">
+            <div class="project-content">
+            <h3>Corporate Website</h3>
+            <p>Modern Website Designed For Productivity And Collaboration.</p>
+            </div>
+            </div>
+
+            <div class="project">
+            <img src="https://plus.unsplash.com/premium_photo-1723568505998-3643abcdc260" alt="project2">
+            <div class="project-content">
+            <h3>IT Services Company</h3>
+            <p>We Maped, Organized, And Managed Systems, Platforms, And Infrastructure.</p>
+            </div>
+            </div>
+
+            <div class="project">
+            <img src="https://plus.unsplash.com/premium_photo-1768381589584-becd3aacffb1" alt="project3">
+            <div class="project-content">
+            <h3>Software Development</h3>
+            <p>We Structured Process Of Designing, Coding, Testing, And Maintained Applications.</p>
+            </div>
+            </div>
+
+            </div>
+
+            </div>
+
+        </section>
+
+        <section class="cta">
+
+            <div class="container">
+
+            <h2>Ready To Start Your Project?</h2>
+
+            <p>Let's build something extraordinary together.</p>
+
+            <a href="contact.html" class="btn">Contact Us</a>
+
+            </div>
+
+        </section>
+
+        <section class="testimonials" id="testimonials">
+
+            <div class="container">
+
+            <div class="section-title">
+            <h2>What Our Clients Say</h2>
+            <p>Trusted by businesses around the world.</p>
+            </div>
+
+            <div class="testimonials-grid">
+
+            <div class="testimonial">
+            <i class="fas fa-quote-left"></i>
+            <p>
+            The team exceeded our expectations. Their professionalism and attention to detail were outstanding.
+            </p>
+            <h4>-Pavan Kumar</h4>
+            </div>
+
+            <div class="testimonial">
+            <i class="fas fa-quote-left"></i>
+            <p>
+            Excellent communication and timely delivery. We highly recommend their services.
+            </p>
+            <h4>-Govardhan</h4>
+            </div>
+
+            <div class="testimonial">
+            <i class="fas fa-quote-left"></i>
+            <p>
+            Outstanding quality, innovative ideas, and exceptional customer support from start to finish.
+            </p>
+            <h4>-Chaithanya</h4>
+            </div>
+
+            </div>
+
+            </div>
+
+        </section>
+
+        <footer id="contact">
+
+            <h2>MICRO INFO WEB</h2>
+
+            <p>Building Innovative Solutions For Businesses Worldwide.</p>
+
+            <div class="social">
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="#"><i class="fab fa-twitter"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+            </div>
+
+            <p>© 2026 Rights Reserved.</p>
+
+        </footer>
+
+            
+
+    
+    </body>
+</html>
