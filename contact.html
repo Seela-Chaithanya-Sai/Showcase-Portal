@@ -44,8 +44,9 @@
           .img1{
         width: 180px;
         height: 70px;
-        background-color: white;
+        background-color: rgba(255,255,255, 0.9);
         border: 2px solid white;
+        backdrop-filter: blur(20px);
        }
 
 
@@ -478,24 +479,29 @@
             <div class="cont-form">
                 <h2 class="h21">Contact Info</h2>
                 <label class="label1" for="name">Name*</label>
-                <input class="input1" type="text"  name="name" placeholder="Enter your name" required><br>
-                <label class="label2" for="name">Email*</label>
-               <input class="input2" type="email" name="email" placeholder="Enter email here" required><br>
+                <input class="input1" type="text" id="name"  name="name" placeholder="Enter your name" required><br>
+                <label class="label2" for="email">Email*</label>
+               <input class="input2" type="email" id="email" name="email" placeholder="Enter email here" required><br>
                 <label class="label3" for="number">Contact No.*</label>
-                <input class="input3" type="number"  name="number" placeholder="Enter your number" required><br>
+                <input class="input3" type="number" id="number"  name="number" placeholder="Enter your number" required><br>
                <label class="label4" for="message">Message*</label>
-            <input class="input4" type="message" name="message" placeholder="Enter your message" required><br>
+            <input class="input4" type="message" name="message" id="message" placeholder="Enter your message" required><br>
             <button class="btn2" onclick="checkfields()">Submit</button>
              
             </div>
             </form>
             <script>
                 function checkfields(){
-                    if (name === " " &&  email === " "  && number === " "){
-                            alert("Contact Info Submitted Successfully");
+
+                let name= document.getElementById('name').value;
+                  let email= document.getElementById('email').value;
+                    let number= document.getElementById('number').value;
+                      let message= document.getElementById('message').value;
+                    if (name === "" &&  email === ""  && number === "" && message === ""){
+                            alert("Please fil out the all fields before submitting.");
                         }
                         else{
-                            alert("Please fill out the all fields before submitting.");
+                            alert("Contact Info Submitted Successfully.");
                         }
                     
                 }
